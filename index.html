@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -27,36 +27,29 @@
             <td>No data Found</td>
             <td>No data Found</td>
         </tr>
-        <!-- loaded with AJAX -->
     </table>
 
     <hr>
-    <h2>Add New Item to Database</h2>
-    <label for="id">ID:</label>
-    <input type="text" id="id-field" name="id" placeholder="ID">
-    <label for="name">Name:</label>
-    <input type="text" id="name-field" name="name" placeholder="Name">
-    <label for="price">Price:</label>
-    <input type="number" id="price-field" name="price" placeholder="Price">
-    <button id="add-item">Add Item</button>
-    </form>
-    <hr>
-    <!-- <button id="send-data">Send Data</button>
-    <p>Sends an example JSON object to the server with id 11111</p>
-    <script>
-        document.getElementById("send-data").onclick = function () {
-            let xhr = new XMLHttpRequest();
-            xhr.open("PUT", "https://vsntawrfq9.execute-api.us-east-2.amazonaws.com/items");
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.send(JSON.stringify({
-                "id": "6666666",
-                "price": 19,
-                "name": "test put value"
-            }));
-        }
-    </script> -->
+    <section id="add-data">
+        <h2>Add New Item to Database</h2>
+        <ul id="add-fields">
+            <li>
+                <label for="id">ID:</label>
+                <input type="text" id="id-field" name="id" placeholder="ID">
+            </li>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name-field" name="name" placeholder="Name">
+            </li>
+            <li>
+                <label for="price">Price:</label>
+                <input type="number" id="price-field" name="price" placeholder="Price">
+            </li>
+            <button id="add-item">Add Item</button>
+        </ul>
 
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+    </section>
 </body>
 
 </html>

@@ -1,10 +1,57 @@
+body {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 h1{
-  border-color: #d3e644;
-  border-style: dashed;
+  display: inline-block;
 }
 
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 5px;
+}
+
+#load-data {
+  display: inline-block;
+  background-color: plum;
+  border-style: dotted;
+  font-size: medium;
+  padding: 8px;
+  margin: 10px;
+}
+
+#load-data:hover {
+  border-style: solid;
+}
+
+#add-data {
+  border-style: solid;
+  padding: 10px;
+  text-align: center;
+  max-width: 350px;
+}
+
+#add-fields {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+}
+
+#add-item {
+  border-style: dotted;
+  background-color: plum;
+  font-size: medium;
+  margin: 5px;
+  padding: 8px;
+}
+
+#add-item:hover {
+  border-style: solid;
 }
